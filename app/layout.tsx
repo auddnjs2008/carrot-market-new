@@ -28,10 +28,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log(roboto, 'roboto');
+
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${rubik.variable} bg-neutral-900 max-w-screen-sm mx-auto text-white`}>
+      <body className={`${roboto.variable}  bg-neutral-900 max-w-screen-sm mx-auto text-white`}>
         {children}
       </body>
     </html>
