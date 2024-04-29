@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experiemntal:{
-        taint:true
-    },
     logging:{
         fetches:{
             fullUrl:true

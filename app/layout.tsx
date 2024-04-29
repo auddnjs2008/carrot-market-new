@@ -10,10 +10,7 @@ const roboto = Roboto({
 
 })
 
-const rubik = Rubik_Scribble({
-  weight: '400', style: 'normal', subsets: ['latin'],
-  variable: '--rubik-text'
-});
+
 
 export const metadata: Metadata = {
   title: {

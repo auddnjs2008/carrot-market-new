@@ -19,7 +19,7 @@ const ChatList: React.FC<Props> = ({ chatRooms, userId }) => {
                     <Link key={index} href={`/chat/${room.id}`}>
                         <li className='flex items-center border  p-3'>
                             <div className='grid grid-cols-2'>
-                                {room.users.filter(user => user.id !== userId).map(user => <div className='size-8 bg-slate-500 relative rounded-full overflow-hidden'>
+                                {room.users.filter(user => user.id !== userId).map((user, index) => <div key={index} className='size-8 bg-slate-500 relative rounded-full overflow-hidden'>
                                     {user.avatar ? <Image fill src={user.avatar} alt='user-avatar' /> : ''}
                                 </div>)}
                             </div>
